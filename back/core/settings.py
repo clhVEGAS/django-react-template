@@ -63,6 +63,7 @@ AUTH_USER_MODEL = "accounts.User"
 
 # Need to make this not die in CI
 ALLOWED_HOSTS = ["*"]
+CORS_ORIGIN_ALLOW_ALL = True
 
 # Secure cookie stuff
 SECURE_SSL_REDITECT = not DEBUG

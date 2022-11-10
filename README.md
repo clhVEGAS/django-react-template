@@ -21,13 +21,6 @@ is invoked with `docker exec -it django tox -e black`.
 Linting is done using [`flake8`](https://pypi.org/project/flake8/) and invoked with
 `docker exec -it django tox -e flake8`.
 
-##### Frontend
-
-We use [`prettier`](https://prettier.io/) to autoformat our code and [`eslint`](https://eslint.org/) to lint it.
-Using the fantastic `eslint-prettier` plugin you can lint the code
-using `docker exec -it react npm run lint` and `docker exec -it react npm run lint-fix` to apply the
-formatting to that lint result.
-
 Windows Installation
 -----
 
@@ -114,6 +107,8 @@ scripts whenever possible as they are extensible and mean less editing of the
 
 This project follows typical django style contentions with the main project
 folder inside `core`; this contains the `settings.py` and other relevant folders.
+
+NOTE: need to remove by-passed CORS origin before pushing in to production, used only for development.
 
 ##### Frontend
 

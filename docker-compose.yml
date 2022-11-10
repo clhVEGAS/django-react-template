@@ -33,9 +33,9 @@ services:
     build:
       context: .
       dockerfile: ./conf/react/Dockerfile
-    command: yarn run start:dev
+    command: npm run start
     ports:
-      - "4000:4000"
+      - "3000:3000"
     volumes:
       - ./front/src:/app/src:rw
       - ./front/public:/app/public:rw
